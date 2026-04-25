@@ -1,6 +1,6 @@
-# 🚢 Portainer CE - Gestão de Containers SEDUC
+# 🚢 Portainer CE - Gestão de Containers
 
-Este projeto documenta e gerencia a stack do **Portainer Community Edition (CE)**, utilizada para a orquestração e gerenciamento visual do ambiente de containers da Secretaria de Estado de Educação (SEDUC).
+Este projeto documenta e gerencia a stack do **Portainer Community Edition (CE)**, utilizada para a orquestração e gerenciamento visual do ambiente de containers.
 
 ## 🎯 Finalidade
 
@@ -8,7 +8,7 @@ O Portainer foi implementado para servir como a interface central de gerenciamen
 
 ## 🏗️ Arquitetura: Docker Swarm
 
-Diferente de uma instalação standalone, o Portainer da SEDUC está rodando sobre um **Cluster Docker Swarm**. 
+Diferente de uma instalação standalone, o Portainer está rodando sobre um **Cluster Docker Swarm**. 
 
 * **Alta Disponibilidade:** O Portainer gerencia todos os 5 nós do cluster (`dck01` a `dck05`).
 * **Agentes Globais:** Utilizamos o `portainer-agent` em modo global, garantindo que o Portainer consiga orquestrar containers em qualquer servidor do parque.
@@ -16,7 +16,7 @@ Diferente de uma instalação standalone, o Portainer da SEDUC está rodando sob
 
 
 
-## 🚀 Vantagens do Portainer para a SEDUC
+## 🚀 Vantagens do Portainer
 
 A adoção do Portainer traz benefícios estratégicos para a nossa infraestrutura:
 
@@ -30,8 +30,8 @@ A adoção do Portainer traz benefícios estratégicos para a nossa infraestrutu
 
 O serviço está exposto através do nosso Proxy Reverso (Nginx) centralizado:
 
-* **URL:** `http://portainer.seduc.pa.gov.br`
-* **Segurança:** Acesso restrito à rede interna da secretaria.
+* **URL:** `http://portainer.lab.gomes.local`
+* **Segurança:** Acesso restrito à rede interna lab.gomes.local.
 
 ---
-*Mantido pela equipe de Infraestrutura e Redes - SEDUC-PA*
+*Mantido pela equipe de Infraestrutura e Redes - lab.gomes.local*
